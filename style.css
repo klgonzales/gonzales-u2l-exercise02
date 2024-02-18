@@ -24,7 +24,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+    font-style: normal; 
 }
 
 .logo h1 {
@@ -116,6 +116,12 @@ section#projects {
     font-size: 45px;
 }
 
+#projects h2 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 45px;
+}
+
 #projects p {
     margin: 0;
     padding: 0;
@@ -124,6 +130,40 @@ section#projects {
     line-height: 0.1;
     font-family: second-font; 
 }
+
+#button a {
+    font-size: 25px; /* Adjust the font size as needed */
+    margin: 0px;
+    padding: 0px;
+    background-color: #dbcaf4; /* Change the background color */
+    padding: 10px 20px; /* Add padding to make the buttons visually appealing */
+    margin-right: 10px; /* Add margin to create space between buttons */
+    text-decoration: none; /* Remove default underline style */
+    color: #333; /* Set text color to black */
+    border-radius: 20px;
+}
+
+#button a:hover {
+    background-color: #f6991a    ; /* Change background color on hover */
+}
+
+/* Hide all text by default */
+#buttonText div {
+    display: none;
+    font-size: 18px;
+    font-family: second-font;
+    padding: 15px;
+    margin: 10px;
+    text-align: justify center /* Justify text */
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+
+/* Show text when anchor tag is targeted */
+#buttonText div:target {
+    display: block;
+}
+
 
 /* Section Styles */
 section {
@@ -240,12 +280,14 @@ footer .footer-content {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    font-style: normal;
 }
 
 footer address {
     flex-grow: 1;
     text-align: left;
     margin-right: 20px;
+    font-style: normal;
 }
 
 footer a {
@@ -255,6 +297,12 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+    color: #f6991a;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: #f6991a;
 }
 
 
